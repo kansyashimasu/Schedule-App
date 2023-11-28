@@ -1,38 +1,137 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
   text-align: center;
+  background: rgb(3,2,8);
+  background: radial-gradient(circle, rgba(3,2,8,1) 0%, rgba(44,27,84,1) 50%, rgba(0,0,0,1) 100%);
+  padding: 20px 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header a{
+  color: #FDB927;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 2px 3px 1px ;
+  letter-spacing: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskCard{
+  width: 250px;
+  padding: 10px 25px;
+  margin: 40px 1%;
+  box-shadow: 7px 8px 17px 4px #200835;
+  border-radius: 10px;
+}
+
+.taskCardTitleInputArea{
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #FDB927;
+}
+
+.taskCardTitleInput{
+  width: 80px;
+  padding: 4px 6px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #d3bbeb;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.taskAddInput{
+  width: 100%;
+  font-size: 15px;
+  padding: 3px 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #FDB927;
+  background: none;
+  color: #d3bbeb;
+}
+
+.taskBox{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px 0;
+  margin-top: 10px;
+  background-color: rgba(85, 37, 131, 0.1);
+  box-shadow: 8px 10px 10px -9px #9141db;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.taskText{
+  margin-left: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskTrashButton{
+  margin-right: 9px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: #FDB927;
+  transition: all 0.3s;
+}
+
+.taskTrashButton:hover{
+  color: #9242dd;
+}
+
+.taskCardsArea{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.addTaskCardButtonArea{
+  margin-left: 1%;
+}
+
+.addTaskCardButton{
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 20px;
+  background: none;
+  border: 1px solid #552583;
+  color: #FDB927;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px 2px #351850;
+  transition: all 0.3s;
+}
+
+.addTaskCardButton:hover{
+  box-shadow: none;
+  transform: translate(4px,4px);
+  border: none;
+}
+
+.taskCardTitleAndTaskCardDeleteButton{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.taskCardDeleteButton{
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #FDB927;
+  transition: all 0.3s;
+}
+
+.taskCardDeleteButton:hover{
+  color: #9242dd;
 }
